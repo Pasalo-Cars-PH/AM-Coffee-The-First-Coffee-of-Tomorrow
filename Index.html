@@ -26,10 +26,15 @@
   </script>
   <style>
     .glass-card {
-      background: rgba(18, 20, 24, 0.65);
+      background: rgba(18, 20, 24, 0.75);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .glass-card-gold {
+      background: rgba(24, 22, 17, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid #D4AF37;
     }
     .gold-gradient-text {
       background: linear-gradient(135deg, #FFF 0%, #D4AF37 50%, #F3E5AB 100%);
@@ -37,123 +42,215 @@
       -webkit-text-fill-color: transparent;
     }
     .gold-glow {
-      box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.3);
-    }
-    .gold-glow:hover {
-      box-shadow: 0 0 50px 0px rgba(212, 175, 55, 0.5);
+      box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.35);
     }
   </style>
 </head>
-<body class="bg-obsidian text-slate-200 font-sans antialiased selection:bg-champagne selection:text-obsidian overflow-x-hidden">
+<body class="bg-obsidian text-slate-200 font-sans antialiased selection:bg-champagne selection:text-obsidian">
 
-  <!-- TOP ANNOUNCEMENT BAR (SCARCITY & HIGH-CONVERTING TRIGGER) -->
-  <div class="bg-gradient-to-r from-obsidian via-slate to-obsidian border-b border-champagne/20 py-2.5 text-center text-xs tracking-widest text-champagne uppercase">
-    <span>✦ Private Estate Pods: Only 4 Reservations Left For This Weekend ✦</span>
+  <!-- TOP SCARCITY BAR -->
+  <div class="bg-slate border-b border-champagne/30 py-2.5 text-center text-[11px] tracking-widest text-champagne uppercase">
+    <span>✦ PRIVATE ESTATE PODS: ONLY 4 RESERVATIONS REMAINING FOR THIS WEEKEND ✦</span>
   </div>
 
   <!-- NAVIGATION -->
   <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-20">
-    <div class="flex items-center space-x-3">
-      <div class="w-8 h-8 rounded-full border border-champagne/40 flex items-center justify-center text-champagne text-xs font-serif font-bold">A</div>
-      <span class="font-serif tracking-[0.25em] text-lg text-white font-semibold">AUREUS</span>
+    <div>
+      <span class="font-serif tracking-[0.25em] text-xl text-white font-bold block">AUREUS</span>
+      <span class="text-[9px] text-gray-500 tracking-widest uppercase">STA. ROSA - TAGAYTAY RIDGE</span>
     </div>
     
-    <div class="hidden md:flex space-x-10 text-xs tracking-[0.2em] uppercase text-gray-400 font-medium">
-      <a href="#about" class="hover:text-champagne transition-colors">The Sanctuary</a>
-      <a href="#tasting" class="hover:text-champagne transition-colors">Tasting Menu</a>
-      <a href="#experience" class="hover:text-champagne transition-colors">Estate Pods</a>
+    <div class="hidden md:flex space-x-8 text-xs tracking-[0.2em] uppercase text-gray-400">
+      <a href="#experience" class="hover:text-champagne transition">The Sanctuary</a>
+      <a href="#packages" class="hover:text-champagne transition">Tasting Pods</a>
     </div>
 
-    <a href="#reserve" class="px-5 py-2.5 rounded-full glass-card text-xs tracking-wider text-champagne border border-champagne/30 hover:border-champagne transition-all duration-300">
-      VIP MEMBER LOGIN
+    <a href="#booking" class="px-5 py-2.5 rounded-full glass-card text-xs tracking-wider text-champagne border border-champagne/40 font-semibold hover:bg-champagne hover:text-obsidian transition duration-300">
+      VIP ACCESS
     </a>
   </nav>
 
   <!-- HERO SECTION -->
-  <section class="relative min-h-[90vh] flex items-center justify-center pt-10 pb-20 px-6">
-    <!-- BACKGROUND LIGHT GLOWS -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-champagne/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-    <div class="max-w-5xl mx-auto text-center relative z-10">
-      
-      <!-- SUBTITLE / SCARCITY BADGE -->
-      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card text-xs font-medium tracking-[0.2em] text-champagne mb-8 border border-champagne/20">
-        <span class="w-2 h-2 rounded-full bg-champagne animate-pulse"></span>
-        <span>STA. ROSA - TAGAYTAY RIDGE EXECUTIVE SANCTUARY</span>
+  <section class="relative pt-10 pb-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-block px-4 py-1.5 rounded-full glass-card text-xs tracking-[0.2em] text-champagne mb-6">
+        STA. ROSA - TAGAYTAY ROAD • PRIVATE SANCTUARY
       </div>
 
-      <!-- MAIN HEADLINE -->
-      <h1 class="font-serif text-4xl md:text-7xl font-bold tracking-tight text-white leading-[1.15] mb-6">
-        Beyond Coffee. <br>
-        <span class="gold-gradient-text">An Ultra-Exclusive Estate.</span>
+      <h1 class="font-serif text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+        Beyond Coffee.<br>
+        <span class="gold-gradient-text">An Ultra-Exclusive Estate Experience.</span>
       </h1>
 
-      <!-- SUB-HEADLINE / VALUE PROPOSITION -->
-      <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-400 font-light leading-relaxed mb-10">
-        Indulge in rare artisanal pour-overs paired with private estate dining pods. Tucked away along the serene Sta. Rosa - Tagaytay passage, designed strictly for those who demand ultimate privacy.
+      <p class="max-w-2xl mx-auto text-sm md:text-base text-gray-400 font-light leading-relaxed mb-10">
+        Indulge in rare artisanal pour-overs paired with bespoke estate dining pods. Tucked away along the serene Sta. Rosa - Tagaytay passage, crafted strictly for those who demand ultimate privacy and uncompromised luxury.
       </p>
 
-      <!-- HIGH-CONVERTING FUNNEL CTA BUTTONS -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mb-16">
-        <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-champagne via-champagne-light to-champagne text-obsidian font-semibold text-sm tracking-wider uppercase gold-glow transition-all duration-300 transform hover:-translate-y-0.5">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-full bg-champagne text-obsidian font-bold text-xs tracking-widest uppercase gold-glow hover:bg-champagne-light transition">
           Reserve Private Pod
         </a>
-        <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card text-white hover:text-champagne font-medium text-sm tracking-wider uppercase border border-white/10 hover:border-champagne/40 transition-all duration-300">
+        <a href="#packages" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card text-white font-medium text-xs tracking-widest uppercase border border-white/20 hover:border-champagne transition">
           View Tasting Menu
         </a>
       </div>
 
-      <!-- PROOF / TRUST SIGNALS (FORBES / TATLER STYLE) -->
-      <div class="pt-10 border-t border-white/10 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-60">
+      <!-- PROOF BAR -->
+      <div class="pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center opacity-70">
         <div>
-          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">FORBES ASIA</span>
-          <span class="text-[10px] text-gray-500">"Top 10 Hideaways"</span>
+          <span class="font-serif text-xs text-white block tracking-widest">FORBES ASIA</span>
+          <span class="text-[10px] text-gray-500">"Top 10 Asian Hideaways"</span>
         </div>
         <div>
-          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">TATLER LUXURY</span>
-          <span class="text-[10px] text-gray-500">"Bespeak Dining"</span>
+          <span class="font-serif text-xs text-white block tracking-widest">TATLER LUXURY</span>
+          <span class="text-[10px] text-gray-500">"Bespoke Dining Sanctuary"</span>
         </div>
         <div>
-          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">MICHELIN GUIDE</span>
+          <span class="font-serif text-xs text-white block tracking-widest">MICHELIN GUIDE</span>
           <span class="text-[10px] text-gray-500">"Recommended Lounge"</span>
         </div>
         <div>
-          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">4.9 / 5.0 RATING</span>
+          <span class="font-serif text-xs text-champagne block tracking-widest">★ 4.9 / 5.0 RATING</span>
           <span class="text-[10px] text-gray-500">From 500+ VIP Guests</span>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- HIGHLIGHTED CORE OFFER / FEATURE GRID (SOHO LAYOUT CONVERTED) -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <div class="grid md:grid-cols-3 gap-8">
-      
-      <!-- CARD 1 -->
-      <div class="glass-card p-8 rounded-2xl hover:border-champagne/40 transition-all duration-300">
-        <div class="text-champagne font-serif text-2xl mb-3">01</div>
-        <h3 class="font-serif text-xl text-white mb-2">Private Glass Pods</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Climate-controlled private outdoor pods with panoramic mountain views and dedicated personal butler service.</p>
+  <!-- SECTION 1: CORE OFFERS -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <span class="text-champagne text-xs uppercase tracking-widest">EXECUTIVE EXPERIENCE</span>
+      <h2 class="font-serif text-2xl md:text-3xl text-white mt-1">Architectural Pods & Coffee Craftsmanship</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass-card p-6 rounded-xl">
+        <div class="text-champagne font-serif text-xl mb-2">01</div>
+        <h3 class="font-serif text-lg text-white mb-2">Climate Glass Pods</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Private temperature-controlled glass pods surrounded by Tagaytay fog, with dedicated butler service.</p>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="glass-card p-8 rounded-2xl border-champagne/40 relative overflow-hidden">
-        <div class="absolute top-0 right-0 bg-champagne text-obsidian text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>
-        <div class="text-champagne font-serif text-2xl mb-3">02</div>
-        <h3 class="font-serif text-xl text-white mb-2">Artisanal Tasting Flight</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Curated selection of single-origin beans paired with bespoke french pastries crafted by award-winning chefs.</p>
+      <div class="glass-card-gold p-6 rounded-xl relative">
+        <span class="absolute top-3 right-3 bg-champagne text-obsidian text-[9px] font-bold px-2 py-0.5 rounded-full">MOST POPULAR</span>
+        <div class="text-champagne font-serif text-xl mb-2">02</div>
+        <h3 class="font-serif text-lg text-white mb-2">Artisanal Coffee Tasting Flight</h3>
+        <p class="text-xs text-gray-300 leading-relaxed">Rare Ethiopian Geisha & Panamanian pour-overs paired with artisanal French pastries prepared live by master baristas.</p>
       </div>
 
-      <!-- CARD 3 -->
-      <div class="glass-card p-8 rounded-2xl hover:border-champagne/40 transition-all duration-300">
-        <div class="text-champagne font-serif text-2xl mb-3">03</div>
-        <h3 class="font-serif text-xl text-white mb-2">Night Executive Lounge</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Transitions into a quiet, low-lit sanctuary with rare espresso cocktails and slow-jazz ambience after sundown.</p>
+      <div class="glass-card p-6 rounded-xl">
+        <div class="text-champagne font-serif text-xl mb-2">03</div>
+        <h3 class="font-serif text-lg text-white mb-2">Night Executive Lounge</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Transitions into a low-lit acoustic sanctuary featuring signature espresso-infused mixology and slow jazz after sundown.</p>
       </div>
-
     </div>
   </section>
+
+  <!-- SECTION 2: PACKAGES -->
+  <section id="packages" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <span class="text-champagne text-xs uppercase tracking-widest">SELECT YOUR ACCESS</span>
+      <h2 class="font-serif text-2xl md:text-3xl text-white mt-1">Exclusive Experience Packages</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass-card p-6 rounded-xl text-center">
+        <h3 class="font-serif text-lg text-white font-bold">Executive Tasting</h3>
+        <p class="text-[10px] text-gray-500 uppercase mb-4">Individual VIP Access</p>
+        <div class="text-champagne text-2xl font-bold mb-4">₱ 2,800 <span class="text-xs text-gray-500 font-normal">/ pax</span></div>
+        <ul class="text-left text-xs text-gray-400 space-y-2 mb-6">
+          <li>✓ 3-Course Coffee Flight</li>
+          <li>✓ Artisan Pastry Pairing</li>
+          <li>✓ Open Garden Lounge Access</li>
+          <li>✓ Complimentary Concierge Parking</li>
+        </ul>
+        <a href="#booking" class="block w-full py-2.5 rounded-full border border-white/20 text-xs text-white uppercase font-semibold">Select Access</a>
+      </div>
+
+      <div class="glass-card-gold p-6 rounded-xl text-center relative border-champagne">
+        <span class="text-champagne text-[9px] font-bold uppercase tracking-wider block mb-1">RECOMMENDED FOR COUPLES</span>
+        <h3 class="font-serif text-xl text-white font-bold">Private Pod Sanctuary</h3>
+        <div class="text-champagne text-3xl font-bold my-4">₱ 7,500 <span class="text-xs text-gray-300 font-normal">/ 2 Pax</span></div>
+        <ul class="text-left text-xs text-gray-200 space-y-2 mb-6">
+          <li>✓ Exclusive Private Glass Pod (2 hrs)</li>
+          <li>✓ 5-Course Pour-Over & Gastronomy Menu</li>
+          <li>✓ Dedicated Private Butler</li>
+          <li>✓ Signature Take-Home Geisha Beans (250g)</li>
+        </ul>
+        <a href="#booking" class="block w-full py-3 rounded-full bg-champagne text-obsidian text-xs font-bold uppercase gold-glow">Book Glass Pod</a>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl text-center">
+        <h3 class="font-serif text-lg text-white font-bold">Full Estate Buyout</h3>
+        <p class="text-[10px] text-gray-500 uppercase mb-4">Intimate Events / Corporate</p>
+        <div class="text-champagne text-2xl font-bold mb-4">₱ 45,000 <span class="text-xs text-gray-500 font-normal">/ Group</span></div>
+        <ul class="text-left text-xs text-gray-400 space-y-2 mb-6">
+          <li>✓ Complete Private Estate Access (Up to 15 Pax)</li>
+          <li>✓ Customized 7-Course Culinary Flight</li>
+          <li>✓ Live Acoustic Jazz Performance</li>
+          <li>✓ VIP Valet & Security Protocol</li>
+        </ul>
+        <a href="#booking" class="block w-full py-2.5 rounded-full border border-white/20 text-xs text-white uppercase font-semibold">Inquire Buyout</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BOOKING FORM -->
+  <section id="booking" class="max-w-4xl mx-auto px-6 py-16">
+    <div class="glass-card-gold p-8 rounded-2xl">
+      <div class="text-center mb-8">
+        <span class="text-champagne text-xs uppercase tracking-widest">VIP CONCIERGE BOOKING</span>
+        <h2 class="font-serif text-2xl text-white mt-1">Secure Your Private Sanctuary Access</h2>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-[10px] text-champagne uppercase tracking-wider mb-1">Full Name</label>
+          <input type="text" placeholder="e.g. Juan Dela Cruz" class="w-full bg-obsidian border border-champagne/30 rounded p-2.5 text-xs text-white focus:outline-none focus:border-champagne">
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[10px] text-champagne uppercase tracking-wider mb-1">Mobile Number</label>
+            <input type="text" placeholder="+63 917 000 0000" class="w-full bg-obsidian border border-champagne/30 rounded p-2.5 text-xs text-white focus:outline-none focus:border-champagne">
+          </div>
+          <div>
+            <label class="block text-[10px] text-champagne uppercase tracking-wider mb-1">Preferred Date</label>
+            <input type="date" class="w-full bg-obsidian border border-champagne/30 rounded p-2.5 text-xs text-white focus:outline-none focus:border-champagne">
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[10px] text-champagne uppercase tracking-wider mb-1">Experience Package</label>
+            <select class="w-full bg-obsidian border border-champagne/30 rounded p-2.5 text-xs text-white focus:outline-none focus:border-champagne">
+              <option>Private Pod Sanctuary (₱7,500)</option>
+              <option>Executive Tasting (₱2,800/pax)</option>
+              <option>Full Estate Buyout (₱45,000)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[10px] text-champagne uppercase tracking-wider mb-1">Time Slot</label>
+            <select class="w-full bg-obsidian border border-champagne/30 rounded p-2.5 text-xs text-white focus:outline-none focus:border-champagne">
+              <option>04:00 PM - Sunset Flight</option>
+              <option>10:00 AM - Morning Dew Flight</option>
+              <option>07:00 PM - Night Acoustic Lounge</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="w-full py-3.5 mt-4 rounded-full bg-champagne text-obsidian font-bold text-xs uppercase tracking-widest gold-glow">
+          Confirm VIP Reservation
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-8 border-t border-white/10 text-xs text-gray-600">
+    <p class="font-serif text-champagne text-sm tracking-widest mb-1">AUREUS ESTATE</p>
+    <p>Km. 48, Santa Rosa - Tagaytay Road, Silang, Cavite • Strictly By Appointment Only</p>
+  </footer>
 
 </body>
 </html>
