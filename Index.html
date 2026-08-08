@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUREUS | Executive Estate & Coffee Sanctuary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#090A0C',
+            champagne: '#D4AF37',
+            'champagne-light': '#F3E5AB',
+            slate: '#121418',
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(18, 20, 24, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF 0%, #D4AF37 50%, #F3E5AB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-glow {
+      box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.3);
+    }
+    .gold-glow:hover {
+      box-shadow: 0 0 50px 0px rgba(212, 175, 55, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-obsidian text-slate-200 font-sans antialiased selection:bg-champagne selection:text-obsidian overflow-x-hidden">
+
+  <!-- TOP ANNOUNCEMENT BAR (SCARCITY & HIGH-CONVERTING TRIGGER) -->
+  <div class="bg-gradient-to-r from-obsidian via-slate to-obsidian border-b border-champagne/20 py-2.5 text-center text-xs tracking-widest text-champagne uppercase">
+    <span>✦ Private Estate Pods: Only 4 Reservations Left For This Weekend ✦</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-20">
+    <div class="flex items-center space-x-3">
+      <div class="w-8 h-8 rounded-full border border-champagne/40 flex items-center justify-center text-champagne text-xs font-serif font-bold">A</div>
+      <span class="font-serif tracking-[0.25em] text-lg text-white font-semibold">AUREUS</span>
+    </div>
+    
+    <div class="hidden md:flex space-x-10 text-xs tracking-[0.2em] uppercase text-gray-400 font-medium">
+      <a href="#about" class="hover:text-champagne transition-colors">The Sanctuary</a>
+      <a href="#tasting" class="hover:text-champagne transition-colors">Tasting Menu</a>
+      <a href="#experience" class="hover:text-champagne transition-colors">Estate Pods</a>
+    </div>
+
+    <a href="#reserve" class="px-5 py-2.5 rounded-full glass-card text-xs tracking-wider text-champagne border border-champagne/30 hover:border-champagne transition-all duration-300">
+      VIP MEMBER LOGIN
+    </a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[90vh] flex items-center justify-center pt-10 pb-20 px-6">
+    <!-- BACKGROUND LIGHT GLOWS -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-champagne/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      
+      <!-- SUBTITLE / SCARCITY BADGE -->
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card text-xs font-medium tracking-[0.2em] text-champagne mb-8 border border-champagne/20">
+        <span class="w-2 h-2 rounded-full bg-champagne animate-pulse"></span>
+        <span>STA. ROSA - TAGAYTAY RIDGE EXECUTIVE SANCTUARY</span>
+      </div>
+
+      <!-- MAIN HEADLINE -->
+      <h1 class="font-serif text-4xl md:text-7xl font-bold tracking-tight text-white leading-[1.15] mb-6">
+        Beyond Coffee. <br>
+        <span class="gold-gradient-text">An Ultra-Exclusive Estate.</span>
+      </h1>
+
+      <!-- SUB-HEADLINE / VALUE PROPOSITION -->
+      <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-400 font-light leading-relaxed mb-10">
+        Indulge in rare artisanal pour-overs paired with private estate dining pods. Tucked away along the serene Sta. Rosa - Tagaytay passage, designed strictly for those who demand ultimate privacy.
+      </p>
+
+      <!-- HIGH-CONVERTING FUNNEL CTA BUTTONS -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mb-16">
+        <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-champagne via-champagne-light to-champagne text-obsidian font-semibold text-sm tracking-wider uppercase gold-glow transition-all duration-300 transform hover:-translate-y-0.5">
+          Reserve Private Pod
+        </a>
+        <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card text-white hover:text-champagne font-medium text-sm tracking-wider uppercase border border-white/10 hover:border-champagne/40 transition-all duration-300">
+          View Tasting Menu
+        </a>
+      </div>
+
+      <!-- PROOF / TRUST SIGNALS (FORBES / TATLER STYLE) -->
+      <div class="pt-10 border-t border-white/10 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-60">
+        <div>
+          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">FORBES ASIA</span>
+          <span class="text-[10px] text-gray-500">"Top 10 Hideaways"</span>
+        </div>
+        <div>
+          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">TATLER LUXURY</span>
+          <span class="text-[10px] text-gray-500">"Bespeak Dining"</span>
+        </div>
+        <div>
+          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">MICHELIN GUIDE</span>
+          <span class="text-[10px] text-gray-500">"Recommended Lounge"</span>
+        </div>
+        <div>
+          <span class="font-serif tracking-widest text-xs uppercase text-gray-300 block">4.9 / 5.0 RATING</span>
+          <span class="text-[10px] text-gray-500">From 500+ VIP Guests</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTED CORE OFFER / FEATURE GRID (SOHO LAYOUT CONVERTED) -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- CARD 1 -->
+      <div class="glass-card p-8 rounded-2xl hover:border-champagne/40 transition-all duration-300">
+        <div class="text-champagne font-serif text-2xl mb-3">01</div>
+        <h3 class="font-serif text-xl text-white mb-2">Private Glass Pods</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Climate-controlled private outdoor pods with panoramic mountain views and dedicated personal butler service.</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="glass-card p-8 rounded-2xl border-champagne/40 relative overflow-hidden">
+        <div class="absolute top-0 right-0 bg-champagne text-obsidian text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>
+        <div class="text-champagne font-serif text-2xl mb-3">02</div>
+        <h3 class="font-serif text-xl text-white mb-2">Artisanal Tasting Flight</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Curated selection of single-origin beans paired with bespoke french pastries crafted by award-winning chefs.</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="glass-card p-8 rounded-2xl hover:border-champagne/40 transition-all duration-300">
+        <div class="text-champagne font-serif text-2xl mb-3">03</div>
+        <h3 class="font-serif text-xl text-white mb-2">Night Executive Lounge</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Transitions into a quiet, low-lit sanctuary with rare espresso cocktails and slow-jazz ambience after sundown.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
