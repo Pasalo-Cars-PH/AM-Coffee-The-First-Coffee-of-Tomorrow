@@ -55,7 +55,7 @@
       "@context": "https://schema.org",
       "@type": "CafeOrCoffeeShop",
       "name": "AM Coffee",
-      "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb",
+      "image": "images/am-coffee-hero.png",
       "telephone": "+639922849531",
       "priceRange": "₱1-500",
       "address": {
@@ -103,13 +103,13 @@
 </head>
 <body class="bg-coffee-950 text-coffee-cream font-sans antialiased selection:bg-coffee-gold selection:text-coffee-950 pb-20 md:pb-0">
 
-    <!-- 4. ANNOUNCEMENT BAR -->
+    <!-- ANNOUNCEMENT BAR -->
     <div class="bg-gradient-to-r from-coffee-900 via-coffee-amber to-coffee-900 text-amber-100 text-xs sm:text-sm font-semibold py-2 px-4 text-center border-b border-amber-500/20 tracking-wide flex items-center justify-center gap-2">
         <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
         <span>⚡ ROAD TRIP SPECIAL • CLAIM YOUR 10% OFF COFFEE VOUCHER</span>
     </div>
 
-    <!-- 5. STICKY NAVIGATION -->
+    <!-- STICKY NAVIGATION -->
     <nav class="sticky top-0 z-40 bg-glass border-b border-coffee-800/80 transition-all">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
             <!-- Brand & Location Badge -->
@@ -157,9 +157,8 @@
         </div>
     </nav>
 
-    <!-- 6. HERO SECTION -->
+    <!-- HERO SECTION -->
     <section id="hero" class="relative py-12 sm:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-coffee-950 via-coffee-900 to-coffee-950 border-b border-coffee-800/50">
-        <!-- Background Ambient Glow -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-coffee-amber/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
@@ -168,7 +167,6 @@
                 <!-- Left Column: Copy & CTAs -->
                 <div class="lg:col-span-7 text-center lg:text-left space-y-6 sm:space-y-8">
                     
-                    <!-- Trust Line Badge -->
                     <div class="inline-flex items-center gap-2 bg-coffee-800/80 border border-coffee-700/60 rounded-full px-3.5 py-1.5 text-xs sm:text-sm text-coffee-cream/90 shadow-sm">
                         <div class="flex text-amber-400 text-xs">
                             <i class="fa-solid fa-star"></i>
@@ -183,7 +181,6 @@
                         <span class="hidden sm:inline text-amber-400 font-medium">Open Daily • 1:00 PM - 3:00 AM</span>
                     </div>
 
-                    <!-- Headline -->
                     <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                         Coffee Worth the Stop. <br class="hidden sm:inline"/>
                         <span class="bg-clip-text text-transparent bg-gradient-to-r from-coffee-gold via-amber-300 to-coffee-amber">
@@ -191,12 +188,10 @@
                         </span>
                     </h1>
 
-                    <!-- Supporting Subtext -->
                     <p class="text-base sm:text-lg text-coffee-cream/80 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
                         A quick roadside coffee break in Silang—handcrafted drinks, fast service, and space to pause before the climb to Tagaytay.
                     </p>
 
-                    <!-- Primary & Secondary CTAs -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                         <a href="#voucher" class="w-full sm:w-auto bg-gradient-to-r from-coffee-amber via-coffee-gold to-amber-500 hover:from-coffee-gold hover:to-amber-400 text-coffee-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-xl transition-all duration-200 transform hover:-translate-y-1 gold-glow-lg text-center flex items-center justify-center gap-3">
                             <span>CLAIM 10% OFF</span>
@@ -207,32 +202,34 @@
                         </a>
                     </div>
 
-                    <!-- Micro Location Indicator -->
                     <div class="pt-2 text-xs text-coffee-cream/60 flex items-center justify-center lg:justify-start gap-2">
                         <i class="fa-solid fa-map-pin text-coffee-gold"></i>
                         <span>📍 Santa Rosa – Tagaytay Rd, Silang, Cavite</span>
                     </div>
                 </div>
 
-                <!-- Right Column: Visual Showcase -->
+                <!-- Right Column: Image 1 (Hero Visual Asset) -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
                         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-coffee-gold/30 to-coffee-amber/30 blur-lg"></div>
                         <div class="relative bg-coffee-900 border border-coffee-800 rounded-2xl overflow-hidden shadow-2xl p-3">
-                            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800" alt="AM Coffee Roadside Experience" class="w-full h-80 sm:h-96 object-cover rounded-xl">
-                            
-                            <!-- Floating Card Overlay -->
+                            <img 
+                                src="images/am-coffee-hero.png" 
+                                alt="AM Coffee Matcha Trio Series Menu Promo Banner along Santa Rosa Tagaytay Road" 
+                                class="w-full h-auto max-h-[460px] object-contain rounded-xl bg-coffee-950" 
+                                loading="eager"
+                            >
                             <div class="absolute bottom-6 left-6 right-6 bg-coffee-950/90 backdrop-blur-md p-4 rounded-xl border border-coffee-700/50 flex items-center justify-between">
                                 <div class="flex items-center gap-3">
                                     <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center">
                                         <i class="fa-solid fa-mug-hot"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-coffee-cream/60">Featured Drink</div>
-                                        <div class="text-sm font-bold text-white">Dirty Matcha Latte</div>
+                                        <div class="text-xs text-coffee-cream/60">Featured Series</div>
+                                        <div class="text-sm font-bold text-white">Matcha Trio Series</div>
                                     </div>
                                 </div>
-                                <span class="bg-amber-500/20 text-amber-300 text-xs px-2.5 py-1 rounded-full font-bold border border-amber-500/30">Must Try</span>
+                                <span class="bg-amber-500/20 text-amber-300 text-xs px-2.5 py-1 rounded-full font-bold border border-amber-500/30">Daily Fresh</span>
                             </div>
                         </div>
                     </div>
@@ -242,7 +239,7 @@
         </div>
     </section>
 
-    <!-- 7. QUICK BENEFIT STRIP -->
+    <!-- QUICK BENEFIT STRIP -->
     <section class="py-10 bg-coffee-900/60 border-b border-coffee-800/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -283,7 +280,7 @@
         </div>
     </section>
 
-    <!-- 8. MENU / SIGNATURE DRINKS -->
+    <!-- MENU / SIGNATURE DRINKS -->
     <section id="menu" class="py-16 sm:py-24 bg-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             
@@ -296,36 +293,23 @@
             <!-- Menu Cards Grid -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 
-                <!-- Product 1 -->
+                <!-- Product 1: Image 3 (Menu Asset) -->
                 <div class="bg-coffee-900 border border-coffee-800 rounded-2xl p-5 hover:border-coffee-700 transition-all flex flex-col justify-between">
                     <div>
-                        <div class="relative overflow-hidden rounded-xl h-48 mb-4 bg-coffee-800">
-                            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&q=80&w=600" alt="Dirty Matcha Latte" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-amber-500 text-coffee-950 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Best Seller</span>
-                        </div>
-                        <div class="flex items-start justify-between gap-2 mb-2">
-                            <h3 class="font-bold text-lg text-white">Dirty Matcha Latte</h3>
-                            <span class="text-coffee-gold font-bold text-base">[ADD PRICE]</span>
-                        </div>
-                        <p class="text-xs sm:text-sm text-coffee-cream/70">Smooth, creamy matcha with a rich espresso kick.</p>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-coffee-800/80 flex items-center justify-between text-xs text-coffee-cream/50">
-                        <span>Category: Matcha / Coffee</span>
-                        <a href="#voucher" class="text-coffee-gold hover:underline font-semibold">Order with 10% OFF →</a>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="bg-coffee-900 border border-coffee-800 rounded-2xl p-5 hover:border-coffee-700 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="relative overflow-hidden rounded-xl h-48 mb-4 bg-coffee-800">
-                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=600" alt="Strawberry Matcha" class="w-full h-full object-cover">
+                        <div class="relative overflow-hidden rounded-xl h-64 mb-4 bg-coffee-950 flex items-center justify-center p-2">
+                            <img 
+                                src="images/am-coffee-menu.png" 
+                                alt="AM Coffee Strawberry Matcha - Cold & Refreshing Matchalicious" 
+                                class="w-full h-full object-contain rounded-lg"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 right-3 bg-amber-500 text-coffee-950 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Now Serving</span>
                         </div>
                         <div class="flex items-start justify-between gap-2 mb-2">
                             <h3 class="font-bold text-lg text-white">Strawberry Matcha</h3>
-                            <span class="text-coffee-gold font-bold text-base">[ADD PRICE]</span>
+                            <span class="text-coffee-gold font-bold text-base">Specialty</span>
                         </div>
-                        <p class="text-xs sm:text-sm text-coffee-cream/70">Layered sweet strawberry puree topped with ceremonial matcha.</p>
+                        <p class="text-xs sm:text-sm text-coffee-cream/70">Layered sweet strawberry puree topped with ceremonial matcha. Daily fresh & ice-cold refreshing.</p>
                     </div>
                     <div class="mt-4 pt-4 border-t border-coffee-800/80 flex items-center justify-between text-xs text-coffee-cream/50">
                         <span>Category: Matcha Series</span>
@@ -333,20 +317,50 @@
                     </div>
                 </div>
 
-                <!-- Product 3 -->
+                <!-- Product 2: Featured Item -->
                 <div class="bg-coffee-900 border border-coffee-800 rounded-2xl p-5 hover:border-coffee-700 transition-all flex flex-col justify-between">
                     <div>
-                        <div class="relative overflow-hidden rounded-xl h-48 mb-4 bg-coffee-800">
-                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=600" alt="Rock Salt Cheese Matcha" class="w-full h-full object-cover">
+                        <div class="relative overflow-hidden rounded-xl h-64 mb-4 bg-coffee-950 flex items-center justify-center p-2">
+                            <img 
+                                src="images/am-coffee-experience.png" 
+                                alt="AM Coffee Rock & Cheese Salt Matcha" 
+                                class="w-full h-full object-contain rounded-lg"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 right-3 bg-amber-500 text-coffee-950 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Top Favorite</span>
                         </div>
                         <div class="flex items-start justify-between gap-2 mb-2">
-                            <h3 class="font-bold text-lg text-white">Rock Salt Cheese Matcha</h3>
-                            <span class="text-coffee-gold font-bold text-base">[ADD PRICE]</span>
+                            <h3 class="font-bold text-lg text-white">Rock & Cheese Salt Matcha</h3>
+                            <span class="text-coffee-gold font-bold text-base">Signature</span>
                         </div>
-                        <p class="text-xs sm:text-sm text-coffee-cream/70">Rich matcha topped with savory, velvety rock salt cheese foam.</p>
+                        <p class="text-xs sm:text-sm text-coffee-cream/70">Rich matcha layer topped with savory, velvety rock salt cheese foam.</p>
                     </div>
                     <div class="mt-4 pt-4 border-t border-coffee-800/80 flex items-center justify-between text-xs text-coffee-cream/50">
                         <span>Category: Specialty Matcha</span>
+                        <a href="#voucher" class="text-coffee-gold hover:underline font-semibold">Order with 10% OFF →</a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Featured Trio Overview -->
+                <div class="bg-coffee-900 border border-coffee-800 rounded-2xl p-5 hover:border-coffee-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl h-64 mb-4 bg-coffee-950 flex items-center justify-center p-2">
+                            <img 
+                                src="images/am-coffee-hero.png" 
+                                alt="AM Coffee Matcha Trio Series Collection" 
+                                class="w-full h-full object-contain rounded-lg"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 right-3 bg-amber-500 text-coffee-950 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Best Value</span>
+                        </div>
+                        <div class="flex items-start justify-between gap-2 mb-2">
+                            <h3 class="font-bold text-lg text-white">Matcha Trio Series</h3>
+                            <span class="text-coffee-gold font-bold text-base">Full Series</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-coffee-cream/70">Choose between Matcha Latte, Strawberry Matcha, or Rock Salt Cheese Matcha.</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-coffee-800/80 flex items-center justify-between text-xs text-coffee-cream/50">
+                        <span>Category: Trio Collection</span>
                         <a href="#voucher" class="text-coffee-gold hover:underline font-semibold">Order with 10% OFF →</a>
                     </div>
                 </div>
@@ -363,7 +377,7 @@
         </div>
     </section>
 
-    <!-- 9. ROAD-TRIP EXPERIENCE -->
+    <!-- ROAD-TRIP EXPERIENCE & Image 2 Placement -->
     <section class="py-16 sm:py-24 bg-gradient-to-b from-coffee-900 to-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -375,7 +389,7 @@
                     </h2>
                     
                     <p class="text-coffee-cream/80 text-sm sm:text-base leading-relaxed">
-                        Whether you’re driving up early or heading back late, AM Coffee provides the perfect roadside interlude along Santa Rosa–Tagaytay Road.
+                        Whether you’re driving up early or heading back late (open 1:00 PM – 3:00 AM), AM Coffee provides the perfect roadside interlude along Santa Rosa–Tagaytay Road.
                     </p>
 
                     <div class="space-y-3 pt-2">
@@ -406,16 +420,27 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600" alt="Atmosphere" class="rounded-2xl w-full h-64 object-cover border border-coffee-800 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=600" alt="Coffee Cup" class="rounded-2xl w-full h-64 object-cover border border-coffee-800 shadow-lg mt-6">
+                <!-- Right Column: Image 2 (Brand / Experience Visual Asset) -->
+                <div class="relative">
+                    <div class="bg-coffee-950 border border-coffee-800 p-4 rounded-2xl shadow-xl">
+                        <img 
+                            src="images/am-coffee-experience.png" 
+                            alt="AM Coffee Rock Cheese Salt Matcha Special Serving Feature" 
+                            class="rounded-xl w-full h-auto max-h-[500px] object-contain mx-auto bg-coffee-900"
+                            loading="lazy"
+                        >
+                        <div class="mt-4 p-3 bg-coffee-900/80 rounded-xl border border-coffee-800 text-center">
+                            <span class="text-xs font-bold text-white block">Now Serving: Rock & Cheese Salt Matcha</span>
+                            <span class="text-[11px] text-coffee-cream/60">Open Daily: 1:00 PM – 3:00 AM • The First Coffee of Tomorrow</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- 10. CUSTOMER REVIEWS & 11. SOCIAL PROOF SUMMARY -->
+    <!-- CUSTOMER REVIEWS & SOCIAL PROOF -->
     <section id="reviews" class="py-16 sm:py-24 bg-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             
@@ -435,7 +460,6 @@
             <!-- Review Cards Grid -->
             <div class="grid md:grid-cols-3 gap-6">
                 
-                <!-- Review 1 -->
                 <div class="bg-coffee-900 border border-coffee-800 p-6 rounded-2xl flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
@@ -452,7 +476,6 @@
                     </div>
                 </div>
 
-                <!-- Review 2 -->
                 <div class="bg-coffee-900 border border-coffee-800 p-6 rounded-2xl flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
@@ -472,7 +495,6 @@
                     </div>
                 </div>
 
-                <!-- Review 3 -->
                 <div class="bg-coffee-900 border border-coffee-800 p-6 rounded-2xl flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
@@ -491,7 +513,6 @@
 
             </div>
 
-            <!-- Additional Micro Reviews Strip -->
             <div class="mt-6 grid sm:grid-cols-3 gap-4 text-xs text-coffee-cream/70">
                 <div class="bg-coffee-900/40 p-3 rounded-lg border border-coffee-800/60">
                     <span class="font-bold text-white">Alexa Herrera:</span> "Budget friendly and nice coffee🥰"
@@ -514,7 +535,7 @@
         </div>
     </section>
 
-    <!-- 12. LOCATION SECTION -->
+    <!-- LOCATION SECTION -->
     <section id="location" class="py-16 sm:py-24 bg-coffee-900 border-b border-coffee-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="grid lg:grid-cols-12 gap-8 items-center">
@@ -559,12 +580,11 @@
                     </div>
                 </div>
 
-                <!-- Google Maps Placeholder Container -->
                 <div class="lg:col-span-7 bg-coffee-950 border border-coffee-800 rounded-2xl overflow-hidden h-80 sm:h-96 relative shadow-xl flex items-center justify-center">
                     <div class="text-center p-6 space-y-3">
                         <i class="fa-solid fa-map-location-dot text-4xl text-coffee-gold mb-2"></i>
                         <h3 class="text-lg font-bold text-white">AM Coffee on Google Maps</h3>
-                        <p class="text-xs text-coffee-cream/60 max-w-sm">Along Santa Rosa - Tagaytay Rd, Silang, 4118 Cavite (3.9 km landmark marker)</p>
+                        <p class="text-xs text-coffee-cream/60 max-w-sm">Along Santa Rosa - Tagaytay Rd, Silang, 4118 Cavite</p>
                         <a href="https://maps.google.com" target="_blank" rel="noopener" class="inline-block bg-coffee-800 hover:bg-coffee-700 text-coffee-gold font-bold text-xs px-4 py-2 rounded-lg border border-coffee-700">
                             Open Interactive Map →
                         </a>
@@ -575,7 +595,7 @@
         </div>
     </section>
 
-    <!-- 13. 10% VOUCHER OFFER & 14. VOUCHER SUCCESS STATE -->
+    <!-- 10% VOUCHER OFFER & SUCCESS STATE -->
     <section id="voucher" class="py-16 sm:py-24 bg-gradient-to-b from-coffee-950 via-coffee-900 to-coffee-950 border-b border-coffee-800/50 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             
@@ -590,7 +610,6 @@
                     <p class="text-sm sm:text-base text-coffee-cream/80">Claim your digital voucher now and enjoy <strong class="text-coffee-gold font-bold">10% OFF</strong> your drinks on your next stopover.</p>
                 </div>
 
-                <!-- Form Container -->
                 <div id="voucher-form-container">
                     <form id="voucher-form" class="max-w-md mx-auto space-y-4" onsubmit="handleVoucherSubmit(event)">
                         <div>
@@ -610,7 +629,6 @@
                     </form>
                 </div>
 
-                <!-- 14. VOUCHER SUCCESS STATE (HIDDEN BY DEFAULT) -->
                 <div id="voucher-success" class="hidden text-center py-8 space-y-4">
                     <div class="w-16 h-16 bg-amber-500/20 text-coffee-gold text-3xl rounded-full flex items-center justify-center mx-auto border border-coffee-gold/40">
                         ☕
@@ -631,7 +649,7 @@
         </div>
     </section>
 
-    <!-- 15. HOW IT WORKS -->
+    <!-- HOW IT WORKS -->
     <section class="py-16 sm:py-20 bg-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
@@ -662,7 +680,7 @@
         </div>
     </section>
 
-    <!-- 16. FINAL CUSTOMER CTA -->
+    <!-- FINAL CUSTOMER CTA -->
     <section class="py-16 bg-gradient-to-r from-coffee-900 via-coffee-800 to-coffee-900 border-b border-coffee-800/80 text-center">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-6">
             <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Next Stop: AM Coffee.</h2>
@@ -678,12 +696,7 @@
         </div>
     </section>
 
-
-
-
-    <!-- ================================================================= -->
-    <!-- 17. PRIVATE CLIENT PROPOSAL DIVIDER                             -->
-    <!-- ================================================================= -->
+    <!-- PRIVATE CLIENT PROPOSAL DIVIDER -->
     <div class="relative py-12 bg-coffee-950 overflow-hidden border-t-2 border-b-2 border-amber-500/30">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
@@ -695,10 +708,7 @@
         </div>
     </div>
 
-
-
-
-    <!-- 18. CLIENT PROBLEM / OPPORTUNITY & 19. BUSINESS OPPORTUNITY -->
+    <!-- CLIENT PROBLEM / OPPORTUNITY -->
     <section class="py-16 sm:py-24 bg-coffee-900 border-b border-coffee-800/50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-12">
             
@@ -757,7 +767,7 @@
         </div>
     </section>
 
-    <!-- 20. WHAT WE’RE BUILDING & 21. BUSINESS VALUE -->
+    <!-- WHAT WE’RE BUILDING & BUSINESS VALUE -->
     <section class="py-16 sm:py-24 bg-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             
@@ -767,7 +777,6 @@
                 <p class="text-sm text-coffee-cream/70">A digital customer acquisition system designed around one goal: giving more people a reason to stop.</p>
             </div>
 
-            <!-- Feature Grid -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <div class="bg-coffee-900 border border-coffee-800 p-5 rounded-2xl space-y-2">
@@ -796,7 +805,6 @@
 
             </div>
 
-            <!-- Core Business Value Highlights -->
             <div class="mt-12 grid sm:grid-cols-4 gap-4 text-center">
                 <div class="p-4 bg-coffee-900/40 rounded-xl border border-coffee-800">
                     <div class="text-xs font-bold uppercase text-coffee-gold">ATTRACT</div>
@@ -819,7 +827,7 @@
         </div>
     </section>
 
-    <!-- 22. LAUNCH PACKAGE, 23. INCLUSIONS & 24. VALUE STACK -->
+    <!-- LAUNCH PACKAGE, INCLUSIONS & VALUE STACK -->
     <section class="py-16 sm:py-24 bg-coffee-900 border-b border-coffee-800/50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             
@@ -833,13 +841,11 @@
                     <p class="text-xs sm:text-sm text-coffee-cream/60">Complete done-for-you sales funnel & voucher system setup.</p>
                 </div>
 
-                <!-- Price Anchor -->
                 <div class="text-center py-4 bg-coffee-900/80 rounded-2xl border border-coffee-800">
                     <div class="text-xs text-coffee-cream/50 line-through">Standard Value: ₱25,000</div>
                     <div class="text-3xl sm:text-5xl font-black text-coffee-gold mt-1">₱12,000 <span class="text-xs font-normal text-coffee-cream/70">ONE-TIME INVESTMENT</span></div>
                 </div>
 
-                <!-- Value Stack Deliverables -->
                 <div class="space-y-3">
                     <h3 class="text-xs font-bold uppercase tracking-wider text-coffee-gold text-center">Included Deliverables:</h3>
                     
@@ -884,7 +890,7 @@
         </div>
     </section>
 
-    <!-- 25. GUARANTEE / RISK REVERSAL -->
+    <!-- GUARANTEE / RISK REVERSAL -->
     <section class="py-16 bg-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-4">
             <div class="w-12 h-12 bg-amber-500/20 text-coffee-gold rounded-full flex items-center justify-center mx-auto text-xl border border-amber-500/30">
@@ -897,7 +903,7 @@
         </div>
     </section>
 
-    <!-- 26. IMPLEMENTATION TIMELINE -->
+    <!-- IMPLEMENTATION TIMELINE -->
     <section class="py-16 sm:py-20 bg-coffee-900 border-b border-coffee-800/50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-10">
@@ -934,7 +940,7 @@
         </div>
     </section>
 
-    <!-- 27. FINAL CLIENT PITCH & 28. APPROVAL FORM -->
+    <!-- FINAL CLIENT PITCH & APPROVAL FORM -->
     <section class="py-16 sm:py-24 bg-coffee-950 border-b border-coffee-800/50">
         <div class="max-w-2xl mx-auto px-4 sm:px-6">
             
@@ -943,7 +949,6 @@
                 <p class="text-xs sm:text-sm text-coffee-cream/70">Let’s turn your roadside location, customer reviews, coffee experience, and 10% offer into a system designed to give travelers a reason to stop.</p>
             </div>
 
-            <!-- Client Approval Form Card -->
             <div class="bg-coffee-900 border border-coffee-800 p-6 sm:p-8 rounded-2xl shadow-xl">
                 
                 <div id="proposal-form-container">
@@ -971,7 +976,6 @@
                     </form>
                 </div>
 
-                <!-- Approval Success State -->
                 <div id="proposal-success" class="hidden text-center py-6 space-y-3">
                     <div class="w-12 h-12 bg-amber-500/20 text-coffee-gold rounded-full flex items-center justify-center mx-auto text-xl">
                         ✓
@@ -987,14 +991,14 @@
         </div>
     </section>
 
-    <!-- 29. PRIVATE PROPOSAL FOOTER -->
+    <!-- PRIVATE PROPOSAL FOOTER -->
     <footer class="py-8 bg-coffee-950 text-center text-xs text-coffee-cream/40 space-y-2">
         <p>Private proposal prepared exclusively for AM Coffee</p>
         <p>Santa Rosa–Tagaytay Road, Silang, Cavite</p>
         <p class="text-[10px] text-amber-500/60">Proposal validity: 48 hours</p>
     </footer>
 
-    <!-- 30. MOBILE STICKY CTA (Bottom Bar for Mobile Users) -->
+    <!-- MOBILE STICKY CTA -->
     <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-coffee-950/95 border-t border-coffee-800 p-3 backdrop-blur-lg flex items-center justify-between gap-3 shadow-2xl">
         <a href="#voucher" class="flex-1 bg-gradient-to-r from-coffee-amber to-coffee-gold text-coffee-950 font-black text-xs py-3 px-4 rounded-xl text-center shadow-md gold-glow flex items-center justify-center gap-2">
             <span>☕ CLAIM 10% OFF</span>
@@ -1007,7 +1011,6 @@
 
     <!-- Interactive Scripts for Forms & Navigation -->
     <script>
-        // Mobile Navigation Toggle
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -1015,14 +1018,12 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Customer Voucher Form Submit Handling
         function handleVoucherSubmit(event) {
             event.preventDefault();
             document.getElementById('voucher-form-container').classList.add('hidden');
             document.getElementById('voucher-success').classList.remove('hidden');
         }
 
-        // Client Proposal Form Submit Handling
         function handleProposalSubmit(event) {
             event.preventDefault();
             document.getElementById('proposal-form-container').classList.add('hidden');
