@@ -3,159 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AM COFFEE | The First Coffee of Tomorrow</title>
+  <title>AM Coffee | Launch Offer Proposal</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass-card { background: rgba(18, 20, 26, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
-    .gold-accent { color: #EAB308; }
-    .btn-glow { box-shadow: 0 0 25px -5px rgba(234, 179, 8, 0.4); }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0d0e11; color: #fff; }
+    .gold-button { background: linear-gradient(135deg, #e3c47e 0%, #c49a45 100%); color: #000; }
+    .gold-text { color: #e3c47e; }
+    .card-dark { background-color: #121418; border: 1px solid rgba(255, 255, 255, 0.08); }
   </style>
 </head>
-<body class="bg-[#0B0C0E] text-gray-100 antialiased selection:bg-yellow-500 selection:text-black">
+<body class="p-4 sm:p-8 max-w-xl mx-auto space-y-6">
 
-  <!-- TOP BAR: URGENCY & SCARCITY -->
-  <div class="bg-yellow-500 text-black text-center text-[11px] font-extrabold py-2 tracking-widest uppercase">
-    ⚡ ROAD TRIP STOP: CLAIM YOUR 10% OFF VOUCHER BEFORE YOUR TAGAYTAY DRIVE
-  </div>
-
-  <!-- NAVIGATION -->
-  <nav class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-      <span class="font-extrabold tracking-tighter text-xl text-white">AM COFFEE</span>
-      <span class="text-[9px] bg-yellow-500/10 text-yellow-400 px-2 py-0.5 rounded font-bold uppercase">Silang • Sta. Rosa Rd</span>
-    </div>
-    <a href="#voucher" class="px-4 py-2 rounded-lg bg-yellow-500 text-black text-xs font-bold uppercase tracking-wider hover:bg-yellow-400 transition">
-      Get Voucher
-    </a>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="max-w-4xl mx-auto px-6 pt-6 pb-12 text-center">
-    <!-- Social Proof Badge -->
-    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card text-xs text-yellow-400 mb-6">
-      <span>★ 5.0 Rating (Google Verified Reviews)</span>
-      <span class="text-gray-600">•</span>
-      <span class="text-gray-300">Opens Daily 1:00 PM</span>
+  <!-- OFFER PRICING CARD -->
+  <div class="bg-black border border-amber-500/30 rounded-2xl p-6 text-center space-y-4 shadow-2xl">
+    <h2 class="text-xl font-bold gold-text tracking-wide">AM Coffee Launch Package</h2>
+    
+    <div class="flex items-center justify-center gap-3">
+      <span class="line-through text-gray-500 text-sm">Normally 25k</span>
+      <span class="text-2xl font-extrabold text-white">12k one-time</span>
     </div>
 
-    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight mb-4">
-      The First Coffee <br>
-      <span class="text-yellow-400">Of Tomorrow.</span>
-    </h1>
-
-    <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-      Budget-friendly, premium street-side coffee along Santa Rosa - Tagaytay Road. Cozy outdoor vibe, spacious group parking, and handcrafted brews.
+    <p class="text-xs text-gray-400 leading-relaxed font-light">
+      Guarantee: If di kayo magka-20 extra Viber/SMS inquiries in 7 days, delete ko at refund.
     </p>
 
-    <div class="flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="#voucher" class="px-8 py-4 rounded-xl bg-yellow-500 text-black font-extrabold text-xs uppercase tracking-wider btn-glow hover:bg-yellow-400 transition">
-        Claim 10% Off Voucher
-      </a>
-      <a href="#reviews" class="px-8 py-4 rounded-xl glass-card text-white font-bold text-xs uppercase tracking-wider border border-white/10 hover:border-yellow-500/50 transition">
-        Read Customer Reviews
-      </a>
-    </div>
-  </section>
+    <button class="w-full py-3.5 rounded-xl gold-button font-bold text-xs uppercase tracking-wider hover:opacity-90 transition">
+      Yes, Make It Live Tomorrow 3PM
+    </button>
+  </div>
 
-  <!-- REVIEWS SECTION (GALING SA GOOGLE SCREENSHOTS MO) -->
-  <section id="reviews" class="max-w-5xl mx-auto px-6 py-12">
-    <div class="text-center mb-10">
-      <span class="text-yellow-500 text-xs font-bold uppercase tracking-widest block mb-1">Customer Feedback</span>
-      <h2 class="text-2xl font-extrabold text-white">What Travelers & Locals Say</h2>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-4">
-      <!-- Review 1 -->
-      <div class="glass-card p-6 rounded-2xl relative">
-        <div class="flex justify-between items-start mb-3">
-          <div>
-            <h3 class="font-bold text-white text-sm">Nia Nogales</h3>
-            <span class="text-[10px] text-gray-500">Local Guide • Verified Review</span>
-          </div>
-          <div class="text-yellow-400 text-xs">★★★★★</div>
-        </div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "Must try! I love dirty matcha latte 😋😋🤗 smooth and creamy, budget friendly and nice place to take a break from busy schedules ☕️☕️..."
-        </p>
+  <!-- APPROVAL & FORM CARD -->
+  <div class="card-dark rounded-2xl p-6 space-y-4">
+    <h3 class="text-sm font-bold text-gray-200">Approve & Make It Live</h3>
+    
+    <form class="space-y-3">
+      <div>
+        <input type="text" placeholder="Your Name (Owner/Manager)" class="w-full bg-[#181a20] border border-gray-800 rounded-xl p-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50">
+      </div>
+      <div>
+        <input type="text" placeholder="Viber / Mobile Number" class="w-full bg-[#181a20] border border-gray-800 rounded-xl p-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50">
       </div>
 
-      <!-- Review 2 -->
-      <div class="glass-card p-6 rounded-2xl relative border-yellow-500/30">
-        <div class="flex justify-between items-start mb-3">
-          <div>
-            <h3 class="font-bold text-white text-sm">aim</h3>
-            <span class="text-[10px] text-gray-500">Verified Review</span>
-          </div>
-          <div class="text-yellow-400 text-xs">★★★★★</div>
-        </div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "10/10 - Parking is accessible and the parking space is large so there is no problem if you are going in large groups or on a road trip. 10000/10 - Their drinks are cheap in fairness and quality."
-        </p>
-      </div>
+      <button type="button" class="w-full py-3.5 rounded-xl bg-black border border-gray-700 text-white font-bold text-xs tracking-wide hover:bg-gray-900 transition">
+        Approve - Build My Version Tonight
+      </button>
+    </form>
+  </div>
 
-      <!-- Review 3 -->
-      <div class="glass-card p-6 rounded-2xl relative">
-        <div class="flex justify-between items-start mb-3">
-          <div>
-            <h3 class="font-bold text-white text-sm">Donato S Vargas Jr</h3>
-            <span class="text-[10px] text-gray-500">Verified Review</span>
-          </div>
-          <div class="text-yellow-400 text-xs">★★★★★</div>
-        </div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "Staff are nice and fast service. Nice place to sit down and catch up with friends or family."
-        </p>
-      </div>
-
-      <!-- Review 4 -->
-      <div class="glass-card p-6 rounded-2xl relative">
-        <div class="flex justify-between items-start mb-3">
-          <div>
-            <h3 class="font-bold text-white text-sm">Melvin Javier</h3>
-            <span class="text-[10px] text-gray-500">Verified Review</span>
-          </div>
-          <div class="text-yellow-400 text-xs">★★★★★</div>
-        </div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "Cozy vibes while having iced coffee on the streets😏"
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- LEAD CAPTURE / VOUCHER FORM -->
-  <section id="voucher" class="max-w-xl mx-auto px-6 py-12">
-    <div class="glass-card p-8 rounded-3xl border border-yellow-500/40 text-center relative">
-      <span class="bg-yellow-500 text-black text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-wider">Limited Offer</span>
-      <h2 class="text-2xl font-extrabold text-white mt-3 mb-2">Get Your 10% Off Voucher</h2>
-      <p class="text-xs text-gray-400 mb-6">Enter your phone number to receive your instant digital voucher via SMS for your stopover.</p>
-
-      <form class="space-y-3 text-left">
-        <div>
-          <label class="block text-[10px] font-bold text-yellow-500 uppercase mb-1">Name</label>
-          <input type="text" placeholder="Your Name" class="w-full bg-[#121418] border border-gray-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-yellow-500">
-        </div>
-        <div>
-          <label class="block text-[10px] font-bold text-yellow-500 uppercase mb-1">Mobile Number</label>
-          <input type="tel" placeholder="0917 000 0000" class="w-full bg-[#121418] border border-gray-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-yellow-500">
-        </div>
-        <button type="button" class="w-full py-4 mt-2 rounded-xl bg-yellow-500 text-black font-extrabold text-xs uppercase tracking-wider btn-glow hover:bg-yellow-400 transition">
-          Claim Voucher Now
-        </button>
-      </form>
-
-      <div class="mt-6 pt-4 border-t border-gray-800 text-[11px] text-gray-500">
-        📍 Along Santa Rosa - Tagaytay Rd, Silang, Cavite (Near Casile Exit)
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="text-center py-6 text-xs text-gray-600 border-t border-gray-900">
-    <p>© AM Coffee | The First Coffee of Tomorrow</p>
-  </footer>
+  <!-- FOOTER EXPIRATION NOTE -->
+  <p class="text-[10px] text-gray-500 text-center tracking-tight">
+    Private link made for AM Coffee • Along Sta. Rosa - Tagaytay Rd • Expires in 48h
+  </p>
 
 </body>
 </html>
